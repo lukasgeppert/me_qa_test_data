@@ -26,4 +26,4 @@ def searchSortedRotatedList(nums: List[int], target: int) -> int:
                 right = mid - 1
     return -1
 
-print(searchSortedRotatedList([0,1,2,5,7,8,9])
+print(searchSortedRotatedList([0,1,2,5,7,8,9]))
