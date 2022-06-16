@@ -27,3 +27,13 @@ def searchSortedRotatedList(nums: List[int], target: int) -> int:
     return -1
 
 print(searchSortedRotatedList([0,1,2,5,7,8,9]))
+
+def max_profit(self, prices: List[int]) -> int:
+    profit = 0
+    left = 0
+    for right in range(1, len(prices)):
+        if prices[right] > prices[left]:
+            profit = max(profit, prices[right] - prices[left])
+        else:
+            left = right
+    return profit
